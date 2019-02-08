@@ -1,0 +1,17 @@
+{
+  "name": "final_project",
+  "version": "1.0.0",
+  "description": "Final project for CS110",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Armen Paronikyan",
+  "license": "ISC",
+  "dependencies": {
+    "koa": "^2.4.1",
+    "koa-static": "^4.0.2",
+    "koa-views": "^6.1.3",
+    "socket.io": "^2.0.4"
+  }
+}

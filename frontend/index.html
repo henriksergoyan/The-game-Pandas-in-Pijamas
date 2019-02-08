@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Best final project ever</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="styles/style.css">
+</head>
+<body>
+	<h1 id="sorry" class="invisible">Sorry other players are already playing</h1>
+	<h1 id="wait">Wait for other users</h1>
+
+	<div class="container-fluid">
+		<div class="winnerWindow invisible">
+			<h3 id="winner"></h3>
+			<img src="http://i0.kym-cdn.com/photos/images/facebook/000/322/573/91d.png" alt="winnerText" id="winnerText">
+		</div>
+		<div class="mainBackground">
+			<canvas id="myCanvas"></canvas>
+		</div>
+		<div class="content col-md-9">
+			<div class="row">
+				<div class="col-md-12 totalNumber">
+					<h2 id="goal"><b>0</b></h2>
+				</div>
+			</div>
+			<div class='row secondRow'>
+				<div class="col-md-6 history">
+					<span type="text" class="historyDisplay" id="history">0</span>
+				</div>
+				<div class="col-md-3 equal">
+					<span>=</span>
+				</div>
+				<div class="col-md-3 thisNumber">
+					<div>
+						<h1 id="total">0</h1>
+					</div>
+				</div>
+			</div>
+			<div class="row operators">
+				<div class="col-md-8">
+					<button class="button disabled" disabled data-value='1'>1</button>
+					<button class="button disabled" disabled data-value='2'>2</button>
+					<button class="button disabled" disabled data-value='3'>3</button>
+				</div>
+				<div class="col-md-4">
+					<div class="col-md-12 weapon">
+							<img src="images/plus.png" alt="shuriken" id="plus">
+							<img src="images/minus.png" alt="shuriken" id="minus">
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="info col-md-3">
+			<div class="registration">
+				<h2 class="name">#Name</h2>
+				<input type="text" id="NameArea" placeholder="Write your Name">
+			</div>
+			<div class="hint">
+			</div>
+		</div>
+		<audio controls class="invisible" id="fatality">
+		  <source src="audio/fatality.mp3" type="audio/mpeg">
+		  Your browser does not support the audio tag.
+		</audio>
+	</div>
+	<script
+	  src="https://code.jquery.com/jquery-3.2.1.min.js"
+	  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+	  crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="/socket.io/socket.io.js"></script>
+	<script src="js/script.js"></script>
+</body>
+</html>
